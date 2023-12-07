@@ -110,9 +110,9 @@ if __name__=='__main__':
     # print("testing set")
     # plot_mask(X_test,y_test)
 
-    model, overall_loss = training_phase(train_dataloader, test_dataloader)
+    model, overall_train_loss, overall_test_loss = training_phase(train_dataloader, test_dataloader)
 
-    plot_loss(overall_loss[0],overall_loss[1])
+    plot_loss(overall_train_loss,overall_test_loss)
 
 
 
